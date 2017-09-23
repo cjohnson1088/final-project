@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Allure Salon & Spa</title>
+    <title>Allure Salon & Spa - Spa Services</title>
     <link rel="stylesheet" href="/assets/dist/css/main.css" />
   </head>
   <body>
@@ -28,91 +28,81 @@
     </svg>
 
     <!-- BACKGROUND IMAGE -->
-    <img src="assets/dist/img/red-hair-bg.png" alt="hello gorgeous" title="hello gorgeous">
+    <img src="assets/dist/img/salon-services-bg.jpg" alt="salon services" title="salon services">
 
     <!-- NAVIGATION -->
     <nav>
+      <img src="assets/dist/img/allure-alt-logo-maroon.png" alt="Allure Salon & Spa" title="Allure Salon & Spa">
       <ul>
-        <li><a href="#">Salon Services</a></li>
+        <li><a href="#" id="current-page">Salon Services</a></li>
         <li><a href="#">Spa Services</a></li>
-        <li><img src="assets/dist/img/allure-main-logo.png" alt="Allure Salon & Spa" title="Allure Salon & Spa"></li>
         <li><a href="#">Spa Packages</a></li>
         <li><a href="#">Our Blog</a></li>
       </ul>
     </nav>
-    <h1>Hello <span class="special-heading">Gorgeous</span></h1>
 
-    <!-- WELCOME -->
-    <main>
-      <img src="assets/dist/img/flower-overlay.png" alt="flowers" title="flowers">
-      <h2>WELCOME</h2>
+    <!-- SOCIAL MEDIA LINKS -->
+    <div class="sub-page-social-media">
+      <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
+      <svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg>
+      <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+    </div>
+
+    <!-- SALON SERVICES -->
+    <div class="salon-services-wrapper">
+      <h1>SALON SERVICES</h1>
       <div class="pink-divider"></div>
-        <p>Allure Salon, ideally situated in Aurora, between Naperville and Oswego, has been serving the western suburbs of Chicago since 2006. We offer traditional services such as Threading and Henna/Mehndi application, as well as Waxing, Facials, and a broad range of Hair services. </p>
-        <p>For hair, we use Redken and Matrix products and also have Biolage and Schwarzkopf products for sale in the salon. Feel free to browse the site and become familiar with our various salon and spa services.</p>
-    </main>
 
-    <!-- THREADING -->
-    <div class="card-wrapper">
-      <div class="card">
-        <div class="card-image">
-          <img src="assets/dist/img/threading-girl.jpg" alt="brow threading" title="brow threading">
-        </div>
-        <div class="card-content">
-          <h3 class="centered">What is Threading?</h3>
-          <div class="divider"></div>
-          <p>Threading is an ancient method of hair removal with origins in Arabia and South Asia. It is very delicate procedure, making it suitable for even the most sensitive skin. Threading is more effective and less painful than tweezing; hair re-growth becomes finer and sparser after regular treatments; and the top layers of skin are not peeled or traumatized in the process. Threading makes it easy to create a sharp and defined shape. Come in and try it today!</p>
-        </div>
-      </div>
+      <h2>HAIRCUTS & STYLING</h2>
+      <ul>
+        <li>Women's Haircut -  $15 & Up</li>
+        <li>Men's Haircut -  $12</li>
+        <li>Kid's Haircut -  $8</li>
+        <li>Shampoo and Haircut -  $20 & Up</li>
+        <li>Shampoo, Cut and Style -  $40</li>
+        <li>Shampoo, Blow-Dry and Style -  $30</li>
+        <li>Scalp Massage -  $25</li>
+        <li>Scalp Massage w/ Shampoo -  $30</li>
+        <li>Formal Style -  $30 & Up</li>
+      </ul>
+
+      <h2>COLOR</h2>
+      <ul>
+        <li>Color Change -  $50 & Up</li>
+        <li>Full Hair Color -  $40 & Up</li>
+        <li>Color Touch-up -  $30</li>
+        <li>Henna Color -  $35</li>
+        <li>Partial Highlights -  $45 & Up</li>
+        <li>Full Highlights -  $75 & Up</li>
+        <li>Men's Color -  $25</li>
+      </ul>
+
+      <h2>TREATMENTS</h2>
+      <ul>
+        <li>Permanent Straightening -  $80 & Up</li>
+      </ul>
+
+      <!-- BOOK NOW BUTTON -->
+      <button type="button" class="red-book-now">BOOK NOW</button>
     </div>
 
-    <!-- BOOK TODAY -->
-    <div class="card-wrapper">
-      <div class="card">
-        <div class="card-image">
-          <img src="assets/dist/img/fun-pink-hair.jpg" alt="pink hair" title="pink hair">
-        </div>
-        <div class="card-content">
-          <h3 class="centered">BOOK your service TODAY!</h3>
-          <div class="divider"></div>
-          <p>For more details in regards to booking a spa party or packages or to schedule an appointment, please call at (630) 499-8260 or e-mail at <a href="mailto:info@AllureSalonInAurora.com">info@AllureSalonInAurora.com»</a></p>
-          <p class="centered">GIFT CERTIFICATES AVAILABLE IN STORE!</p>
-        </div>
-      </div>
-    </div>
-
-    <footer>
-      <div class="grid">
-        <h4><span class="fancy">Sign up today</span> to recieve special deals!</h4>
-
-    <!-- NEWSLETTER SIGN UP -->
-        <form>
-          FIRST NAME
-          <input type="text" name="first name">
-          LAST NAME
-          <input type="text" name="last name">
-          E-MAIL
-          <input type="email" name="e-mail">
-          <input type="submit" value="Submit">
-        </form>
-      </div>
+    <footer class="sub-page-footer">
 
       <!-- LOCATION & HOURS -->
       <div class="grid">
-        <p class="centered">646 S Frontenac St
-          unit 101
+        <p>646 S Frontenac St unit 101,
           Aurora, IL 60504</p>
-        <p class="centered">PHONE: (630) 499-8260</p>
+        <p>PHONE: (630) 499-8260</p>
+      </div>
+
+      <div class="grid">
         <p>TUES - SAT</p><p>10AM to 7PM</p>
         <p>SUNDAY</p><p>12PM to 5PM</p>
         <p>MONDAY</p><p>CLOSED</p>
       </div>
 
-      <!-- SOCIAL MEDIA LINKS -->
-      <div class="social-media">
-        <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
-        <svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg>
-        <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
-      </div>
+      <p class="copywrite">ALLURE SALON & SPA &#169; 2017 | DESIGNED BY CAITLIN JOHNSON DESIGNS</p>
+
     </footer>
 
 
