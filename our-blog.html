@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Allure Salon & Spa - Our Blog</title>
-    <link rel="stylesheet" href="/assets/dist/css/main.css" />
+    <link rel="stylesheet" href="assets/dist/css/main.css" />
   </head>
   <body>
     <!-- ICOMOON HTML -->
@@ -31,7 +31,7 @@
     </svg>
 
     <!-- BACKGROUND IMAGE -->
-    <img src="assets/dist/img/blog-bg.jpg" alt="white paint" title="white paint">
+    <!--<img class="background" src="assets/dist/img/blog-bg.jpg" alt="white paint" title="white paint">-->
 
     <!-- NAVIGATION -->
     <nav>
@@ -125,6 +125,9 @@
     </footer>
 
 
-    <script src="/assets/dist/js/app.js" charset="utf-8"></script>
+    <script src="assets/dist/js/production.js" charset="utf-8"></script>
+    <script>
+      $.backstretch("assets/dist/img/blog-bg.jpg");
+    </script>
   </body>
 </html>
