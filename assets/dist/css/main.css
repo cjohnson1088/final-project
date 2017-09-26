@@ -11,6 +11,9 @@
 @import "_6_pieces/pieces";
 @import "_7_pages/pages"; */
 .background {
-  width: 100%; }
+  width: 100%;
+  max-height: 700px;
+  -o-object-fit: cover;
+  object-fit: cover; }
 
 /*# sourceMappingURL=main.css.map */
