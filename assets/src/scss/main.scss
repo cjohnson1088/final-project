@@ -14,10 +14,27 @@
 @import "_5_layout/layout";
 @import "_6_pieces/pieces";
 @import "_7_pages/pages"; */
+
+// COLORS
 $maroon: #591616;
 $red-black: #260507;
 $beige-overlay: rgba(242, 219, 206, 0.5);
 $beige: #f2dbce;
+$pink: #a65e58;
+
+// FONTS
+$san-serif: "minerva-modern",sans-serif;
+$script: "bickham-script-pro-3",sans-serif;
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	font-family: $san-serif;
+}
 
 .background {
   width: 100%;
@@ -25,9 +42,8 @@ $beige: #f2dbce;
   object-fit: cover;
 }
 
-// NAVIGATION
-nav {
-  font-family: "minerva-modern",sans-serif;
+// HOME NAVIGATION
+.home-nav {
   background-color: $beige-overlay;
   width: 100%;
   max-height: 90px;
@@ -59,8 +75,8 @@ nav {
   }
 }
 
-h1 {
-  font-family: "minerva-modern",sans-serif;
+// HEADINGS
+h1, h2, h3 {
   text-transform: uppercase;
 }
 
@@ -73,11 +89,43 @@ h1 {
 
 .special-heading {
   color: $beige;
-  font-family: "bickham-script-pro-3",sans-serif;
+  font-family: $script;
   text-transform: capitalize;
   display: block;
   font-size: 7rem;
   line-height: 12px;
   margin-left: -.52em;
   text-shadow: 0 3px 4px rgba(149, 134, 134, 0.75);
+}
+
+h2, h3 {
+	text-align: center;
+	padding-bottom: .5em;
+}
+
+// MAIN
+main {
+  background-color: $beige;
+  background-image: url(../img/flower-overlay.png);
+  background-blend-mode: overlay;
+	color: $maroon;
+	padding: 2em;
+}
+
+.column-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	grid-gap: 15px;
+	padding-top: 1em;
+	width: 80%;
+	margin: auto;
+}
+
+// DIVIDERS
+.pink-divider {
+	background-color: $pink;
+	width: 35px;
+	height: 7px;
+	margin: auto;
 }
