@@ -21,29 +21,38 @@ $red-black: #260507;
 $beige-overlay: rgba(242, 219, 206, 0.5);
 $beige: #f2dbce;
 $pink: #a65e58;
+$red: #8c2a2a;
 
 // FONTS
 $san-serif: "minerva-modern",sans-serif;
 $script: "bickham-script-pro-3",sans-serif;
+$body-copy: "museo-slab",serif;
 
+// BASE SETTING
 * {
 	margin: 0;
 	padding: 0;
 	border: 0;
 }
 
+// HELPER
+.centered {
+	text-align: center;
+}
+
 body {
-	font-family: $san-serif;
+	font-family: $body-copy;
 }
 
 .background {
   width: 100%;
-  max-height: 675px;
+  max-height: 500px;
   object-fit: cover;
 }
 
 // HOME NAVIGATION
 .home-nav {
+	font-family: $san-serif;
   background-color: $beige-overlay;
   width: 100%;
   max-height: 90px;
@@ -76,7 +85,10 @@ body {
 }
 
 // HEADINGS
-h1, h2, h3 {
+h1,
+h2,
+h3 {
+	font-family: $san-serif;
   text-transform: uppercase;
 }
 
@@ -98,8 +110,8 @@ h1, h2, h3 {
   text-shadow: 0 3px 4px rgba(149, 134, 134, 0.75);
 }
 
-h2, h3 {
-	text-align: center;
+h2,
+h3 {
 	padding-bottom: .5em;
 }
 
@@ -128,4 +140,67 @@ main {
 	width: 35px;
 	height: 7px;
 	margin: auto;
+}
+
+// CARDS
+.card-wrapper {
+	width: 100%;
+	display: flex;
+	grid-area: card;
+	max-height: 350px;
+
+	&.threading {
+		color: $beige;
+		background-color: $maroon;
+	}
+
+	&.booking {
+		color: $maroon;
+		background-color: $beige;
+	}
+
+	.card {
+		display: flex;
+
+		.card-content {
+			padding: 2em;
+			align-self: center;
+
+			p {
+				padding: 1em;
+
+				a {
+					color: $red;
+				}
+			}
+		}
+
+		.card-image {
+			width: 45%;
+			max-width: 467px;
+			display: flex;
+
+			img {
+				object-fit: cover;
+				overflow: hidden;
+			}
+		}
+	}
+}
+
+// FOOTER
+footer {
+	background-color: $pink;
+	color: $maroon;
+}
+
+// FORM
+label {
+	display: block;
+	font-family: $san-serif;
+}
+
+input {
+	border-bottom: $red-black solid 1px;
+	padding: .5em;
 }
