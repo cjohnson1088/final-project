@@ -35,9 +35,13 @@ $body-copy: "museo-slab",serif;
 	border: 0;
 }
 
-// HELPER
+// HELPERS
 .centered {
 	text-align: center;
+}
+
+.grid {
+	display: grid;
 }
 
 body {
@@ -90,6 +94,10 @@ h2,
 h3 {
 	font-family: $san-serif;
   text-transform: uppercase;
+}
+
+h4 {
+	font-family: $san-serif;
 }
 
   #homepage-heading {
@@ -198,9 +206,21 @@ footer {
 label {
 	display: block;
 	font-family: $san-serif;
+	position: relative;
+	top: 20px;
+	transition: top 0.5s ease-in-out;
+
+	&.out-of-the-way {
+		top: 0;
+	}
 }
 
-input {
+input[type="text"],
+input[type="email"] {
+	background-color: $pink;
 	border-bottom: $red-black solid 1px;
 	padding: .5em;
+	width: 100%;
+  margin: auto;
+	box-sizing: border-box;
 }

@@ -18,6 +18,9 @@
 .centered {
   text-align: center; }
 
+.grid {
+  display: grid; }
+
 body {
   font-family: "museo-slab", serif; }
 
@@ -65,6 +68,9 @@ h2,
 h3 {
   font-family: "minerva-modern", sans-serif;
   text-transform: uppercase; }
+
+h4 {
+  font-family: "minerva-modern", sans-serif; }
 
 #homepage-heading {
   color: #260507;
@@ -154,10 +160,23 @@ footer {
 
 label {
   display: block;
-  font-family: "minerva-modern", sans-serif; }
+  font-family: "minerva-modern", sans-serif;
+  position: relative;
+  top: 20px;
+  -webkit-transition: top 0.5s ease-in-out;
+  -o-transition: top 0.5s ease-in-out;
+  transition: top 0.5s ease-in-out; }
+  label.out-of-the-way {
+    top: 0; }
 
-input {
+input[type="text"],
+input[type="email"] {
+  background-color: #a65e58;
   border-bottom: #260507 solid 1px;
-  padding: .5em; }
+  padding: .5em;
+  width: 100%;
+  margin: auto;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
 /*# sourceMappingURL=main.css.map */
