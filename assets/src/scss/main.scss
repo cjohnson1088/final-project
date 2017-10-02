@@ -40,10 +40,7 @@ $body-copy: "museo-slab",serif;
 	text-align: center;
 }
 
-.grid {
-	display: grid;
-}
-
+// BODY
 body {
 	font-family: $body-copy;
 }
@@ -98,14 +95,22 @@ h3 {
 
 h4 {
 	font-family: $san-serif;
+	font-size: .9em;
+
+	.fancy {
+		font-family: $script;
+		font-size: 2.5em;
+		margin-right: 5px;
+		color: $beige;
+	}
 }
 
-  #homepage-heading {
-    color: $red-black;
-    position: absolute;
-    top: 200px;
-    left: 200px;
-  }
+#homepage-heading {
+  color: $red-black;
+  position: absolute;
+  top: 200px;
+  left: 200px;
+}
 
 .special-heading {
   color: $beige;
@@ -115,7 +120,8 @@ h4 {
   font-size: 7rem;
   line-height: 12px;
   margin-left: -.52em;
-  text-shadow: 0 3px 4px rgba(149, 134, 134, 0.75);
+	text-shadow: 0 3px 4px rgba(31, 31, 31, 0.75);
+	font-weight: 500;
 }
 
 h2,
@@ -200,9 +206,45 @@ main {
 footer {
 	background-color: $pink;
 	color: $maroon;
+
+	.grid {
+		display: grid;
+	  grid-template-columns: 1fr 1fr 1fr;
+	  grid-template-rows: auto;
+	  grid-gap: 10px;
+		padding: 1em 0 1em 1em;
+
+		.location {
+			align-self: center;
+
+			.times {
+				padding: 10px;
+				margin: auto;
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-template-rows: auto;
+				color: $red-black;
+			}
+
+			.phone {
+				color: $beige;
+			}
+		}
+	}
+
+	.copywrite {
+		font-size: .75em;
+		padding: 10px;
+
+	}
 }
 
 // FORM
+.names {
+	width: 49%;
+	display: inline-block;
+}
+
 label {
 	display: block;
 	font-family: $san-serif;
@@ -223,4 +265,41 @@ input[type="email"] {
 	width: 100%;
   margin: auto;
 	box-sizing: border-box;
+}
+
+.submit-btn {
+	padding: 20px;
+
+	input[type="submit"] {
+		background-color: $maroon;
+	  font-family: $san-serif;
+		color: $beige;
+		font-size: .8em;
+		letter-spacing: 3.5px;
+	  text-transform: uppercase;
+	  padding: 10px;
+	  width: 50%;
+	}
+}
+
+// SOCIAL MEDIA
+.social-media-wrapper {
+	background-color: $maroon;
+	padding: 10px 20px;
+	align-self: center;
+	justify-self: end;
+
+	.social-media {
+		float: right;
+
+		.icon {
+			fill: $beige;
+			max-width: 45px;
+			height: 45px;
+			padding: 5px;
+			display: block;
+
+		}
+	}
+
 }

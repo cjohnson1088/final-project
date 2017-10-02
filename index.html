@@ -47,7 +47,7 @@
     <!-- WELCOME -->
     <main>
       <!--<img class="overlay" src="assets/dist/img/flower-overlay.png" alt="flowers" title="flowers">-->
-      <h2>WELCOME</h2>
+      <h2 class="centered">WELCOME</h2>
       <div class="pink-divider"></div>
       <div class="column-wrapper">
         <p class="column">Allure Salon, ideally situated in Aurora, between Naperville and Oswego, has been serving the western suburbs of Chicago since 2006. We offer traditional services such as Threading and Henna/Mehndi application, as well as Waxing, Facials, and a broad range of Hair services. </p>
@@ -86,36 +86,48 @@
 
     <footer>
       <div class="grid">
-        <h4><span class="fancy">Sign up today</span> to recieve special deals!</h4>
 
     <!-- NEWSLETTER SIGN UP -->
-        <form>
-          <label for="name" class="centered">FIRST NAME</label>
-          <input class="centered" type="text" name="first name">
-          <label for="name" class="centered">LAST NAME</label>
-          <input class="centered" type="text" name="last name">
+        <form class="centered">
+          <h4><span class="fancy">Sign up today</span> to recieve special deals!</h4>
+
+          <div class="names">
+            <label for="name" class="centered">FIRST NAME</label>
+            <input class="centered" type="text" name="first name">
+          </div>
+
+          <div class="names">
+            <label for="name" class="centered">LAST NAME</label>
+            <input class="centered" type="text" name="last name">
+          </div>
           <label for="email" class="centered">E-MAIL</label>
           <input class="centered" type="email" name="e-mail">
-          <input type="submit" value="Submit">
+
+          <div class="submit-btn">
+            <input type="submit" value="Submit">
+          </div>
         </form>
-      </div>
 
       <!-- LOCATION & HOURS -->
-      <div class="grid">
-        <p class="centered">646 S Frontenac St
-          unit 101
-          Aurora, IL 60504</p>
-        <p class="centered">PHONE: (630) 499-8260</p>
-        <p>TUES - SAT</p><p>10AM to 7PM</p>
-        <p>SUNDAY</p><p>12PM to 5PM</p>
-        <p>MONDAY</p><p>CLOSED</p>
-      </div>
+        <div class="location">
+          <p class="centered">646 S Frontenac St unit 101</p>
+              <p class="centered">Aurora, IL 60504</p>
+          <p class="centered phone">PHONE: (630) 499-8260</p>
+          <div class="times centered">
+            <p>TUES - SAT</p><p>10AM to 7PM</p>
+            <p>SUNDAY</p><p>12PM to 5PM</p>
+            <p>MONDAY</p><p>CLOSED</p>
+          </div>
+        </div>
 
-      <!-- SOCIAL MEDIA LINKS -->
-      <div class="social-media">
-        <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
-        <svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg>
-        <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+        <!-- SOCIAL MEDIA LINKS -->
+        <div class="social-media-wrapper">
+          <div class="social-media">
+            <a href="#"><svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg></a>
+            <a href="#"><svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg></a>
+            <a href="#"><svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg></a>
+          </div>
+        </div>
       </div>
           <p class="copywrite">ALLURE SALON & SPA &#169; 2017 | DESIGNED BY CAITLIN JOHNSON DESIGNS</p>
     </footer>
