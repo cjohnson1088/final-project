@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Allure Salon & Spa - Spa Services</title>
     <link rel="stylesheet" href="assets/dist/css/main.css" />
+    <script src="https://use.typekit.net/oxi0lak.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </head>
   <body>
     <!-- ICOMOON HTML -->
@@ -43,14 +45,14 @@
 
     <!-- SOCIAL MEDIA LINKS -->
     <div class="sub-page-social-media">
-      <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
-      <svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg>
-      <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+      <a href="#"><svg class="icon icon-facebook pink"><use xlink:href="#icon-facebook"></use></svg></a>
+      <a href="#"><svg class="icon icon-instagram pink"><use xlink:href="#icon-instagram"></use></svg></a>
+      <a href="#"><svg class="icon icon-twitter pink"><use xlink:href="#icon-twitter"></use></svg></a>
     </div>
 
     <!-- SALON SERVICES -->
     <div class="spa-services-wrapper">
-      <h1>SPA SERVICES</h1>
+      <h1 class="centered">SPA SERVICES</h1>
       <div class="pink-divider"></div>
 
       <h2>HAIR REMOVAL</h2>
@@ -103,32 +105,34 @@
       </ul>
 
       <!-- BOOK NOW BUTTON -->
-      <button type="button" class="red-book-now">BOOK NOW</button>
+      <div class="book-now-wrapper centered">
+        <button type="button" class="red-book-now">BOOK NOW</button>
+      </div>
     </div>
 
-    <footer class=" sub-page-footer pink-footer">
+    <footer class="sub-page-footer pink-footer">
 
       <!-- LOCATION & HOURS -->
-      <div class="grid">
+      <div class="grid centered">
         <p>646 S Frontenac St unit 101,
           Aurora, IL 60504</p>
-        <p>PHONE: (630) 499-8260</p>
+        <p class="phone">PHONE: (630) 499-8260</p>
       </div>
 
-      <div class="grid">
-        <p>TUES - SAT</p><p>10AM to 7PM</p>
-        <p>SUNDAY</p><p>12PM to 5PM</p>
-        <p>MONDAY</p><p>CLOSED</p>
+      <div class="grid centered">
+        <p>TUES - SAT</p><p class="bold">10AM to 7PM</p>
+        <p>SUNDAY</p><p class="bold">12PM to 5PM</p>
+        <p>MONDAY</p><p class="bold">CLOSED</p>
       </div>
 
-      <p class="copywrite">ALLURE SALON & SPA &#169; 2017 | DESIGNED BY CAITLIN JOHNSON DESIGNS</p>
+      <p class="copywrite centered">ALLURE SALON & SPA &#169; 2017 | DESIGNED BY CAITLIN JOHNSON DESIGNS</p>
 
     </footer>
 
 
     <script src="assets/dist/js/production.js" charset="utf-8"></script>
     <script>
-      $.backstretch("assets/dist/img/spa-services-bg.jpeg");
+      $.backstretch("assets/dist/img/spa-services-bg.jpg");
     </script>
   </body>
 </html>

@@ -63,11 +63,11 @@ $body-copy: "museo-slab",serif;
 
 .red-book-now {
 	font-family: $san-serif;
-	color: $maroon;
+	color: $red;
 	font-size: 1em;
 	letter-spacing: 3.5px;
 	background-color: rgba(255, 255, 255, 0);
-	border: $red solid 2px;
+	border: $red solid 3px;
 	padding: 10px;
 	width: 50%;
 }
@@ -397,11 +397,16 @@ $breakpoints: (
 			max-height: 45px;
 			padding: 10px;
 		}
+
+		.pink {
+			fill: $pink;
+		}
 	}
 }
 
 // MAIN
-.salon-services-wrapper {
+.salon-services-wrapper,
+.spa-services-wrapper {
 	background-color: $beige-overlay;
 	padding: 1em;
 	box-shadow: 3.3px 2.3px 5px 0 rgba(149, 134, 134, 0.75);

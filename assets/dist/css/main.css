@@ -31,11 +31,11 @@
 
 .red-book-now {
   font-family: "minerva-modern", sans-serif;
-  color: #591616;
+  color: #8c2a2a;
   font-size: 1em;
   letter-spacing: 3.5px;
   background-color: rgba(255, 255, 255, 0);
-  border: #8c2a2a solid 2px;
+  border: #8c2a2a solid 3px;
   padding: 10px;
   width: 50%; }
 
@@ -290,19 +290,25 @@ input[type="email"] {
     max-width: 45px;
     max-height: 45px;
     padding: 10px; }
+  .sub-page-social-media a .pink {
+    fill: #a65e58; }
 
-.salon-services-wrapper {
+.salon-services-wrapper,
+.spa-services-wrapper {
   background-color: rgba(242, 219, 206, 0.5);
   padding: 1em;
   -webkit-box-shadow: 3.3px 2.3px 5px 0 rgba(149, 134, 134, 0.75);
   box-shadow: 3.3px 2.3px 5px 0 rgba(149, 134, 134, 0.75);
   color: #591616; }
-  .salon-services-wrapper h1 {
+  .salon-services-wrapper h1,
+  .spa-services-wrapper h1 {
     letter-spacing: 3.5px;
     padding-bottom: .5em; }
-  .salon-services-wrapper h2 {
+  .salon-services-wrapper h2,
+  .spa-services-wrapper h2 {
     padding-top: 1em; }
-  .salon-services-wrapper li {
+  .salon-services-wrapper li,
+  .spa-services-wrapper li {
     list-style: none;
     padding: 5px 0; }
 
