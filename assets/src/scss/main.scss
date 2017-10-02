@@ -148,6 +148,11 @@ h4 {
 	}
 }
 
+.homepage-heading_hello {
+	z-index: 10;
+	position: relative;
+}
+
 .special-heading {
   color: $beige;
   font-family: $script;
@@ -158,6 +163,8 @@ h4 {
   margin-left: -.52em;
 	text-shadow: 0 3px 4px rgba(31, 31, 31, 0.75);
 	font-weight: 500;
+	z-index: 5;
+	position: relative;
 }
 
 h2,
