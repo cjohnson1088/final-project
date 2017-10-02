@@ -28,6 +28,12 @@ $san-serif: "minerva-modern",sans-serif;
 $script: "bickham-script-pro-3",sans-serif;
 $body-copy: "museo-slab",serif;
 
+// MIXINS
+@mixin headings() {
+	font-family: $san-serif;
+	text-transform: uppercase;
+}
+
 // BASE SETTING
 * {
 	margin: 0;
@@ -78,6 +84,7 @@ body {
         text-decoration: none;
 
         img {
+					width: 100%;
           max-width: 250px;
         }
       }
@@ -89,8 +96,7 @@ body {
 h1,
 h2,
 h3 {
-	font-family: $san-serif;
-  text-transform: uppercase;
+	@include headings;
 }
 
 h4 {
@@ -105,11 +111,14 @@ h4 {
 	}
 }
 
-#homepage-heading {
-  color: $red-black;
-  position: absolute;
-  top: 200px;
-  left: 200px;
+.homepage-heading-wrapper {
+	position: absolute;
+	top: 35%;
+	left: 25%;
+
+	#homepage-heading {
+	  color: $red-black;
+	}
 }
 
 .special-heading {
@@ -161,7 +170,6 @@ main {
 	width: 100%;
 	display: flex;
 	grid-area: card;
-	max-height: 350px;
 
 	&.threading {
 		color: $beige;
@@ -174,6 +182,7 @@ main {
 	}
 
 	.card {
+		width: 100%;
 		display: flex;
 
 		.card-content {
@@ -192,7 +201,7 @@ main {
 		.card-image {
 			width: 45%;
 			max-width: 467px;
-			display: flex;
+			display: none;
 
 			img {
 				object-fit: cover;
@@ -301,5 +310,13 @@ input[type="email"] {
 
 		}
 	}
+}
 
+// MEDIA QUERIES
+$breakpoint-tablet: 768px;
+
+@media screen and (min-width: $breakpoint-tablet) {
+	.card-image {
+		display: flex;
+	}
 }
