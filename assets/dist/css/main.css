@@ -18,6 +18,27 @@
 .centered {
   text-align: center; }
 
+.bold {
+  font-weight: 700; }
+
+.phone {
+  color: #f2dbce; }
+
+.book-now-wrapper {
+  width: 100%;
+  margin: auto;
+  padding-top: 1em; }
+
+.red-book-now {
+  font-family: "minerva-modern", sans-serif;
+  color: #591616;
+  font-size: 1em;
+  letter-spacing: 3.5px;
+  background-color: rgba(255, 255, 255, 0);
+  border: #8c2a2a solid 2px;
+  padding: 10px;
+  width: 50%; }
+
 body {
   font-family: "museo-slab", serif; }
 
@@ -177,8 +198,6 @@ footer {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
         color: #260507; }
-      footer .grid .location .phone {
-        color: #f2dbce; }
   footer .copywrite {
     font-size: .75em;
     padding: 10px; }
@@ -236,11 +255,62 @@ input[type="email"] {
       padding: 5px;
       display: block; }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .card-image {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; } }
+
+.pages-nav {
+  width: 100%; }
+  .pages-nav a img {
+    width: 25%; }
+  .pages-nav ul li {
+    padding: 10px 0; }
+    .pages-nav ul li a {
+      text-decoration: none;
+      font-family: "minerva-modern", sans-serif;
+      color: #591616;
+      text-transform: uppercase; }
+      .pages-nav ul li a#current-page {
+        color: #f2dbce; }
+
+.sub-page-social-media {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .sub-page-social-media a .icon {
+    fill: #591616;
+    max-width: 45px;
+    max-height: 45px;
+    padding: 10px; }
+
+.salon-services-wrapper {
+  background-color: rgba(242, 219, 206, 0.5);
+  padding: 1em;
+  -webkit-box-shadow: 3.3px 2.3px 5px 0 rgba(149, 134, 134, 0.75);
+  box-shadow: 3.3px 2.3px 5px 0 rgba(149, 134, 134, 0.75);
+  color: #591616; }
+  .salon-services-wrapper h1 {
+    letter-spacing: 3.5px;
+    padding-bottom: .5em; }
+  .salon-services-wrapper h2 {
+    padding-top: 1em; }
+  .salon-services-wrapper li {
+    list-style: none;
+    padding: 5px 0; }
+
+.sub-page-footer .grid {
+  display: block; }
+
+.maroon-footer {
+  color: #a65e58;
+  background-color: #591616; }
 
 /*# sourceMappingURL=main.css.map */
