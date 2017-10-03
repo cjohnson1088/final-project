@@ -529,7 +529,8 @@ input[type="email"] {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: "minerva-modern", sans-serif;
-  color: #f2dbce; }
+  color: #f2dbce;
+  font-size: 1em; }
 
 .submit-btn {
   padding: 20px; }
