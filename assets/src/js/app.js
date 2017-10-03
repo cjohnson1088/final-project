@@ -25,6 +25,13 @@ function SiteController($)
     });
 
     $('input[type=text], input[type=email]').blur(function(e) {
+
+      // if the field has a value, leave it
+      if ($(this).val() || $(this).val() != '') {
+        return;
+      }
+
+      // otherwise, move the label back
       $(this).parent().find('label').removeClass('out-of-the-way');
     });
   }
