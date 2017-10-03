@@ -85,6 +85,39 @@ body {
 }
 
 // HOME NAVIGATION
+.mobile-home-nav {
+	font-family: $san-serif;
+	background-color: $beige-overlay;
+	width: 100%;
+	padding-bottom: 1em;
+
+	@include breakpoint(portrait) {
+		display: none;
+	}
+
+	ul {
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+
+		li {
+			text-transform: uppercase;
+			list-style: none;
+			padding: 5px 20px;
+
+			a{
+				color: $maroon;
+				text-decoration: none;
+
+				img {
+					max-width: 250px;
+					width: 25%;
+				}
+			}
+		}
+	}
+}
+
 .home-nav {
 	font-family: $san-serif;
   background-color: $beige-overlay;
@@ -93,8 +126,14 @@ body {
   position: absolute;
   top: 50px;
   left: 0;
+	display: none;
+
+	@include breakpoint(portrait) {
+		display: flex;
+	}
 
   ul {
+		width: 100%;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -140,8 +179,20 @@ h4 {
 
 .homepage-heading-wrapper {
 	position: absolute;
-	top: 35%;
+	top: 40%;
 	left: 25%;
+
+	@include breakpoint(large-mobile) {
+		top: 50%;
+	}
+
+	@include breakpoint(small) {
+		top: 60%;
+	}
+
+	@include breakpoint(portrait) {
+		top: 35%;
+	}
 
 	#homepage-heading {
 	  color: $red-black;
@@ -183,12 +234,16 @@ main {
 
 .column-wrapper {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr;
 	grid-template-rows: auto;
 	grid-gap: 15px;
 	padding-top: 1em;
 	width: 80%;
 	margin: auto;
+
+	@include breakpoint(small) {
+		grid-template-columns: 1fr 1fr;
+	}
 }
 
 // DIVIDERS
@@ -237,6 +292,10 @@ main {
 			max-width: 467px;
 			display: none;
 
+			@include breakpoint(portrait) {
+		    display: flex;
+		  }
+
 			img {
 				object-fit: cover;
 				overflow: hidden;
@@ -250,12 +309,15 @@ footer {
 	background-color: $pink;
 	color: $maroon;
 
-	.grid {
-		display: grid;
-	  grid-template-columns: 1fr 1fr 1fr;
-	  grid-template-rows: auto;
-	  grid-gap: 10px;
-		padding: 1em 0 1em 1em;
+	@include breakpoint(portrait) {
+		.grid {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: auto;
+			grid-gap: 10px;
+			padding: 1em 0 1em 1em;
+			}
+	}
 
 		.location {
 			align-self: center;
@@ -269,7 +331,6 @@ footer {
 				color: $red-black;
 			}
 		}
-	}
 
 	.copywrite {
 		font-size: .75em;
@@ -279,6 +340,10 @@ footer {
 }
 
 // FORM
+.form-field {
+	padding: 0 10px;
+}
+
 .names {
 	width: 49%;
 	display: inline-block;
@@ -290,6 +355,7 @@ label {
 	position: relative;
 	top: 20px;
 	transition: top 0.5s ease-in-out;
+	pointer-events: none;
 
 	&.out-of-the-way {
 		top: 0;
@@ -304,6 +370,8 @@ input[type="email"] {
 	width: 100%;
   margin: auto;
 	box-sizing: border-box;
+	font-family: $san-serif;
+	color: $beige;
 }
 
 .submit-btn {
@@ -317,7 +385,6 @@ input[type="email"] {
 		letter-spacing: 3.5px;
 	  text-transform: uppercase;
 	  padding: 10px;
-	  width: 50%;
 	}
 }
 
@@ -329,24 +396,20 @@ input[type="email"] {
 	justify-self: end;
 
 	.social-media {
-		float: right;
+		text-align: center;
+
+		@include breakpoint(portrait) {
+			float: right;
+			display: grid;
+		}
 
 		.icon {
 			fill: $beige;
 			max-width: 45px;
 			height: 45px;
 			padding: 5px;
-			display: block;
-
 		}
 	}
-}
-
-// MEDIA QUERIES
-.card-image {
-  @include breakpoint(portrait){
-    display: flex;
-  }
 }
 
 // ----- SALON SERVICES ----- //
