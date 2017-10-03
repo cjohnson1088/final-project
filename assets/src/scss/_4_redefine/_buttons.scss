@@ -1,3 +1,25 @@
 /*------------------------------------*\
     #BUTTONS
 \*------------------------------------*/
+// BUTTONS
+.book-now-wrapper {
+	width: 100%;
+	margin: auto;
+	padding-top: 1em;
+
+	:hover {
+		color: $beige;
+		border: $beige solid 3px;
+	}
+}
+
+.red-book-now {
+	font-family: $san-serif;
+	color: $red;
+	font-size: 1em;
+	letter-spacing: 3.5px;
+	background-color: rgba(255, 255, 255, 0);
+	border: $red solid 3px;
+	padding: 10px;
+	width: 50%;
+}

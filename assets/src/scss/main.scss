@@ -145,6 +145,10 @@ body {
       list-style: none;
       padding: 0 20px;
 
+			:hover {
+				color: $beige;
+			}
+
       a{
         color: $maroon;
         text-decoration: none;
@@ -284,6 +288,10 @@ main {
 				a {
 					color: $red;
 				}
+
+				:hover {
+					color: $red-black;
+				}
 			}
 		}
 
@@ -409,6 +417,10 @@ input[type="email"] {
 			max-width: 45px;
 			height: 45px;
 			padding: 5px;
+
+			:hover {
+				fill: $red;
+			}
 		}
 	}
 }

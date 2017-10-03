@@ -13,6 +13,12 @@
 
 \*------------------------------------*/
 
+// MIXINS
+@mixin headings() {
+	font-family: $san-serif;
+	text-transform: uppercase;
+}
+
 @mixin remove-text() {
 	text-indent: -9999px;
 }

@@ -10,9 +10,17 @@
 @function lightest( $color ) 	{ @return lighten($color,50%); }
 
 .black-and-white {
-	-webkit-filter: unquote("grayscale(100%)"); 
+	-webkit-filter: unquote("grayscale(100%)");
 }
 
 .color {
-	-webkit-filter: unquote("grayscale(0%)"); 	
+	-webkit-filter: unquote("grayscale(0%)");
 }
+
+// COLORS
+$maroon: #591616;
+$red-black: #260507;
+$beige-overlay: rgba(242, 219, 206, 0.5);
+$beige: #f2dbce;
+$pink: #a65e58;
+$red: #8c2a2a;

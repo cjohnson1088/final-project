@@ -12,3 +12,25 @@
 @import "theme";
 @import "arrows";
 @import "zindex";
+
+// HELPERS
+.centered {
+	text-align: center;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.phone {
+	color: $beige;
+}
+
+
+// DIVIDERS
+.pink-divider {
+	background-color: $pink;
+	width: 35px;
+	height: 7px;
+	margin: auto;
+}

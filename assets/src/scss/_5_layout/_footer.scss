@@ -1,9 +1,49 @@
 /*------------------------------------*\
     #FOOTER
 \*------------------------------------*/
-.footer {
+// HOME FOOTER
+footer {
+	background-color: $pink;
+	color: $maroon;
 
-	.copyright {
-		
+	@include breakpoint(portrait) {
+		.grid {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: auto;
+			grid-gap: 10px;
+			padding: 1em 0 1em 1em;
+			}
 	}
+
+		.location {
+			align-self: center;
+
+			.times {
+				padding: 10px;
+				margin: auto;
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-template-rows: auto;
+				color: $red-black;
+			}
+		}
+
+	.copywrite {
+		font-size: .75em;
+		padding: 10px;
+
+	}
+}
+
+// SUB PAGES FOOTER
+.sub-page-footer {
+	.grid {
+			display: block;
+	}
+}
+
+.maroon-footer {
+	color: $pink;
+	background-color: $maroon;
 }

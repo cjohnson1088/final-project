@@ -4,3 +4,119 @@
 
 @import "gravity-forms";
 @import "ratios";
+
+// HEADINGS
+h1,
+h2,
+h3 {
+	@include headings;
+}
+
+h4 {
+	font-family: $san-serif;
+	font-size: .9em;
+
+	.fancy {
+		font-family: $script;
+		font-size: 2.5em;
+		margin-right: 5px;
+		color: $beige;
+	}
+}
+
+.homepage-heading-wrapper {
+	position: absolute;
+	top: 40%;
+	left: 25%;
+
+	@include breakpoint(large-mobile) {
+		top: 50%;
+	}
+
+	@include breakpoint(small) {
+		top: 60%;
+	}
+
+	@include breakpoint(portrait) {
+		top: 35%;
+	}
+
+	#homepage-heading {
+	  color: $red-black;
+	}
+}
+
+.homepage-heading_hello {
+	z-index: 10;
+	position: relative;
+}
+
+.special-heading {
+  color: $beige;
+  font-family: $script;
+  text-transform: capitalize;
+  display: block;
+  font-size: 7rem;
+  line-height: 12px;
+  margin-left: -.52em;
+	text-shadow: 0 3px 4px rgba(31, 31, 31, 0.75);
+	font-weight: 500;
+	z-index: 5;
+	position: relative;
+}
+
+h2,
+h3 {
+	padding-bottom: .5em;
+}
+
+// HOME SOCIAL MEDIA
+.social-media-wrapper {
+	background-color: $maroon;
+	padding: 10px 20px;
+	align-self: center;
+	justify-self: end;
+
+	.social-media {
+		text-align: center;
+
+		@include breakpoint(portrait) {
+			float: right;
+			display: grid;
+		}
+
+		.icon {
+			fill: $beige;
+			max-width: 45px;
+			height: 45px;
+			padding: 5px;
+
+			:hover {
+				fill: $red;
+			}
+		}
+	}
+}
+
+// SOCIAL MEDIA SUB PAGES
+.sub-page-social-media {
+	display: flex;
+	justify-content: center;
+
+	a {
+		.icon {
+			fill: $maroon;
+			max-width: 45px;
+			max-height: 45px;
+			padding: 10px;
+
+			:hover {
+				fill: $beige;
+			}
+		}
+
+		.pink {
+			fill: $pink;
+		}
+	}
+}

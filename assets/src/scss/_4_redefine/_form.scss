@@ -22,3 +22,53 @@ textarea {
 	}
 
 }
+
+// FORM
+.form-field {
+	padding: 0 10px;
+}
+
+.names {
+	width: 49%;
+	display: inline-block;
+}
+
+label {
+	display: block;
+	font-family: $san-serif;
+	position: relative;
+	top: 20px;
+	transition: top 0.5s ease-in-out;
+	pointer-events: none;
+
+	&.out-of-the-way {
+		top: 0;
+	}
+}
+
+input[type="text"],
+input[type="email"] {
+	background-color: $pink;
+	border-bottom: $red-black solid 1px;
+	padding: .5em;
+	width: 100%;
+  margin: auto;
+	box-sizing: border-box;
+	font-family: $san-serif;
+	color: $beige;
+	font-size: 1em;
+}
+
+.submit-btn {
+	padding: 20px;
+
+	input[type="submit"] {
+		background-color: $maroon;
+	  font-family: $san-serif;
+		color: $beige;
+		font-size: .8em;
+		letter-spacing: 3.5px;
+	  text-transform: uppercase;
+	  padding: 10px;
+	}
+}
