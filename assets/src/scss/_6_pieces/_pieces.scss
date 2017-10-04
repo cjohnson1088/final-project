@@ -63,11 +63,38 @@ h4 {
 	font-weight: 500;
 	z-index: 5;
 	position: relative;
+
+	&.red {
+		color: $maroon;
+	}
 }
+
+	.spa {
+		color: $red-black;
+	}
 
 h2,
 h3 {
 	padding-bottom: .5em;
+}
+
+// SPA PACKAGES
+.spa-packages-heading {
+	position: absolute;
+  left: 25%;
+
+	@include breakpoint(small) {
+		left: 50%;
+    top: 50%;
+	}
+
+	.spa-packages-heading_spa {
+		position: relative;
+		z-index: 10;
+		color: $red;
+		left: -70px;
+		top: -15px;
+	}
 }
 
 // HOME SOCIAL MEDIA
@@ -103,6 +130,11 @@ h3 {
 	display: flex;
 	justify-content: center;
 
+	@include breakpoint(small) {
+		margin-left: 10%;
+		align-self: center;
+	}
+
 	a {
 		.icon {
 			fill: $maroon;
@@ -115,8 +147,159 @@ h3 {
 			}
 		}
 
+		.red {
+			fill: $red;
+		}
+
 		.pink {
 			fill: $pink;
+		}
+	}
+}
+
+article {
+	padding: 1em;
+
+	h3 {
+		text-transform: inherit;
+		padding-top: .5em;
+		color: $red;
+
+		.special {
+			font-family: $script;
+			text-transform: capitalize;
+			font-size: 2em;
+
+			:hover {
+				text-decoration: underline;
+			}
+
+			a {
+				color: $red;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+// CARDS
+.margin-auto {
+	@include breakpoint(portrait) {
+		width: 75%;
+		margin: auto;
+	}
+}
+.card-package-wrapper {
+	@include breakpoint(small) {
+		margin-top: -25%;
+	}
+}
+
+.package-wrapper {
+	margin-top: 50px;
+	width: 100%;
+	color: $beige;
+	text-align: center;
+
+	@include breakpoint(portrait) {
+		max-width: 733px;
+	}
+
+	&.maroon {
+		background-color: $maroon;
+	}
+
+	&.red {
+		background-color: $red;
+	}
+
+	.package {
+		@include breakpoint(portrait) {
+			display: flex;
+		}
+	}
+
+	.package-image {
+		@include breakpoint(portrait) {
+			overflow: hidden;
+	    display: flex;
+			width: 100%;
+			max-width: 271px;
+		}
+
+			img {
+			width: 100%;
+			max-height: 350px;
+			object-position: top;
+			object-fit: cover;
+
+			@include breakpoint(portrait) {
+				width: 271px;
+			  align-self: center;
+			  object-fit: cover;
+			}
+		}
+	}
+
+	.package-content {
+		padding: 1em;
+		align-self: center;
+
+		p {
+			padding: 10px 0;
+		}
+	}
+}
+
+.card-wrapper {
+	width: 100%;
+	display: flex;
+	grid-area: card;
+
+	&.threading {
+		color: $beige;
+		background-color: $maroon;
+	}
+
+	&.booking {
+		color: $maroon;
+		background-color: $beige;
+	}
+
+	.card {
+		width: 100%;
+		display: flex;
+
+		.card-content {
+			padding: 2em;
+			align-self: center;
+
+			p {
+				padding: 1em;
+
+				a {
+					color: $red;
+				}
+
+				:hover {
+					color: $red-black;
+				}
+			}
+		}
+
+		.card-image {
+			width: 45%;
+			max-width: 467px;
+			display: none;
+
+			@include breakpoint(portrait) {
+		    display: flex;
+		  }
+
+			img {
+				object-fit: cover;
+				overflow: hidden;
+			}
 		}
 	}
 }

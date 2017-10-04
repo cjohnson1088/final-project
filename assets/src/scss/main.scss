@@ -15,62 +15,6 @@
 @import "_6_pieces/pieces";
 @import "_7_pages/pages";
 
-// COLORS
-$maroon: #591616;
-$red-black: #260507;
-$beige-overlay: rgba(242, 219, 206, 0.5);
-$beige: #f2dbce;
-$pink: #a65e58;
-$red: #8c2a2a;
-
-// FONTS
-$san-serif: "minerva-modern",sans-serif;
-$script: "bickham-script-pro-3",sans-serif;
-$body-copy: "museo-slab",serif;
-
-// MIXINS
-@mixin headings() {
-	font-family: $san-serif;
-	text-transform: uppercase;
-}
-
-// BASE SETTING
-* {
-	margin: 0;
-	padding: 0;
-	border: 0;
-}
-
-// HELPERS
-.centered {
-	text-align: center;
-}
-
-.bold {
-	font-weight: 700;
-}
-
-.phone {
-	color: $beige;
-}
-
-// BUTTONS
-.book-now-wrapper {
-	width: 100%;
-	margin: auto;
-	padding-top: 1em;
-}
-
-.red-book-now {
-	font-family: $san-serif;
-	color: $red;
-	font-size: 1em;
-	letter-spacing: 3.5px;
-	background-color: rgba(255, 255, 255, 0);
-	border: $red solid 3px;
-	padding: 10px;
-	width: 50%;
-}
 
 // BODY
 body {
@@ -82,149 +26,6 @@ body {
   max-height: 500px;
   object-fit: cover;
 	vertical-align: middle;
-}
-
-// HOME NAVIGATION
-.mobile-home-nav {
-	font-family: $san-serif;
-	background-color: $beige-overlay;
-	width: 100%;
-	padding-bottom: 1em;
-
-	@include breakpoint(portrait) {
-		display: none;
-	}
-
-	ul {
-		text-align: center;
-		justify-content: center;
-		align-items: center;
-
-		li {
-			text-transform: uppercase;
-			list-style: none;
-			padding: 5px 20px;
-
-			a{
-				color: $maroon;
-				text-decoration: none;
-
-				img {
-					max-width: 250px;
-					width: 25%;
-				}
-			}
-		}
-	}
-}
-
-.home-nav {
-	font-family: $san-serif;
-  background-color: $beige-overlay;
-  width: 100%;
-  max-height: 90px;
-  position: absolute;
-  top: 50px;
-  left: 0;
-	display: none;
-
-	@include breakpoint(portrait) {
-		display: flex;
-	}
-
-  ul {
-		width: 100%;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    max-height: 55px;
-
-    li {
-      text-transform: uppercase;
-      list-style: none;
-      padding: 0 20px;
-
-			:hover {
-				color: $beige;
-			}
-
-      a{
-        color: $maroon;
-        text-decoration: none;
-
-        img {
-					width: 100%;
-          max-width: 250px;
-        }
-      }
-    }
-  }
-}
-
-// HEADINGS
-h1,
-h2,
-h3 {
-	@include headings;
-}
-
-h4 {
-	font-family: $san-serif;
-	font-size: .9em;
-
-	.fancy {
-		font-family: $script;
-		font-size: 2.5em;
-		margin-right: 5px;
-		color: $beige;
-	}
-}
-
-.homepage-heading-wrapper {
-	position: absolute;
-	top: 40%;
-	left: 25%;
-
-	@include breakpoint(large-mobile) {
-		top: 50%;
-	}
-
-	@include breakpoint(small) {
-		top: 60%;
-	}
-
-	@include breakpoint(portrait) {
-		top: 35%;
-	}
-
-	#homepage-heading {
-	  color: $red-black;
-	}
-}
-
-.homepage-heading_hello {
-	z-index: 10;
-	position: relative;
-}
-
-.special-heading {
-  color: $beige;
-  font-family: $script;
-  text-transform: capitalize;
-  display: block;
-  font-size: 7rem;
-  line-height: 12px;
-  margin-left: -.52em;
-	text-shadow: 0 3px 4px rgba(31, 31, 31, 0.75);
-	font-weight: 500;
-	z-index: 5;
-	position: relative;
-}
-
-h2,
-h3 {
-	padding-bottom: .5em;
 }
 
 // MAIN
@@ -248,14 +49,6 @@ main {
 	@include breakpoint(small) {
 		grid-template-columns: 1fr 1fr;
 	}
-}
-
-// DIVIDERS
-.pink-divider {
-	background-color: $pink;
-	width: 35px;
-	height: 7px;
-	margin: auto;
 }
 
 // CARDS
@@ -312,173 +105,24 @@ main {
 	}
 }
 
-// FOOTER
-footer {
-	background-color: $pink;
-	color: $maroon;
-
-	@include breakpoint(portrait) {
-		.grid {
-			display: grid;
-			grid-template-columns: 1fr 1fr 1fr;
-			grid-template-rows: auto;
-			grid-gap: 10px;
-			padding: 1em 0 1em 1em;
-			}
-	}
-
-		.location {
-			align-self: center;
-
-			.times {
-				padding: 10px;
-				margin: auto;
-				display: grid;
-				grid-template-columns: 1fr 1fr;
-				grid-template-rows: auto;
-				color: $red-black;
-			}
-		}
-
-	.copywrite {
-		font-size: .75em;
-		padding: 10px;
-
-	}
-}
-
-// FORM
-.form-field {
-	padding: 0 10px;
-}
-
-.names {
-	width: 49%;
-	display: inline-block;
-}
-
-label {
-	display: block;
-	font-family: $san-serif;
-	position: relative;
-	top: 20px;
-	transition: top 0.5s ease-in-out;
-	pointer-events: none;
-
-	&.out-of-the-way {
-		top: 0;
-	}
-}
-
-input[type="text"],
-input[type="email"] {
-	background-color: $pink;
-	border-bottom: $red-black solid 1px;
-	padding: .5em;
-	width: 100%;
-  margin: auto;
-	box-sizing: border-box;
-	font-family: $san-serif;
-	color: $beige;
-	font-size: 1em;
-}
-
-.submit-btn {
-	padding: 20px;
-
-	input[type="submit"] {
-		background-color: $maroon;
-	  font-family: $san-serif;
-		color: $beige;
-		font-size: .8em;
-		letter-spacing: 3.5px;
-	  text-transform: uppercase;
-	  padding: 10px;
-	}
-}
-
-// SOCIAL MEDIA
-.social-media-wrapper {
-	background-color: $maroon;
-	padding: 10px 20px;
-	align-self: center;
-	justify-self: end;
-
-	.social-media {
-		text-align: center;
-
-		@include breakpoint(portrait) {
-			float: right;
-			display: grid;
-		}
-
-		.icon {
-			fill: $beige;
-			max-width: 45px;
-			height: 45px;
-			padding: 5px;
-
-			:hover {
-				fill: $red;
-			}
-		}
-	}
-}
-
-// ----- SALON SERVICES ----- //
-.pages-nav {
-	width: 100%;
-
-	a {
-		img {
-			width: 25%;
-		}
-	}
-
-	ul {
-		li {
-			padding: 10px 0;
-
-			a {
-				text-decoration: none;
-				font-family: $san-serif;
-				color: $maroon;
-				text-transform: uppercase;
-
-				&#current-page {
-					color: $beige;
-				}
-			}
-		}
-	}
-}
-
-// SOCIAL MEDIA SUB PAGES
-.sub-page-social-media {
-	display: flex;
-	justify-content: center;
-
-	a {
-		.icon {
-			fill: $maroon;
-			max-width: 45px;
-			max-height: 45px;
-			padding: 10px;
-		}
-
-		.pink {
-			fill: $pink;
-		}
-	}
-}
-
-// MAIN
+// SALON SERVICES MAIN
 .salon-services-wrapper,
 .spa-services-wrapper {
 	background-color: $beige-overlay;
 	padding: 1em;
 	box-shadow: 3.3px 2.3px 5px 0 rgba(149, 134, 134, 0.75);
 	color: $maroon;
+	text-align: center;
+	max-width: 576px;
+
+	@include breakpoint(small) {
+		text-align: left;
+		width: 75%;
+		position: relative;
+		margin-bottom: 50px;
+    left: 40px;
+    top: 20px;
+	}
 
 	h1 {
 		letter-spacing: 3.5px;
@@ -487,22 +131,106 @@ input[type="email"] {
 
 	h2 {
 		padding-top: 1em;
+
 	}
+
+	.spa-services-column-wrapper {
+		width: 85%;
+    margin: auto;
+
+		@include breakpoint(small) {
+			display:flex;
+		}
+
+		.spa-services-column {
+
+			@include breakpoint(small) {
+				width: 50%;
+			}
+
+			li {
+			list-style: none;
+			padding: 5px 0;
+			}
+		}
+	}
+}
+
+.salon-services-column {
+	width: 85%;
+	margin: auto;
 
 	li {
-		list-style: none;
-		padding: 5px 0;
+	list-style: none;
+	padding: 5px 0;
 	}
 }
 
-// FOOTER
-.sub-page-footer {
-	.grid {
-			display: block;
+// CARDS
+.margin-auto {
+	@include breakpoint(portrait) {
+		width: 75%;
+		margin: auto;
+	}
+}
+.card-package-wrapper {
+	@include breakpoint(small) {
+		margin-top: -25%;
 	}
 }
 
-.maroon-footer {
-	color: $pink;
-	background-color: $maroon;
+.package-wrapper {
+	margin-top: 50px;
+	width: 100%;
+	color: $beige;
+	text-align: center;
+
+	@include breakpoint(portrait) {
+		max-width: 733px;
+	}
+
+	&.maroon {
+		background-color: $maroon;
+	}
+
+	&.red {
+		background-color: $red;
+	}
+
+	.package {
+		@include breakpoint(portrait) {
+			display: flex;
+		}
+	}
+
+	.package-image {
+		@include breakpoint(portrait) {
+			overflow: hidden;
+	    display: flex;
+			width: 100%;
+			max-width: 271px;
+		}
+
+			img {
+			width: 100%;
+			max-height: 350px;
+			object-position: top;
+			object-fit: cover;
+
+			@include breakpoint(portrait) {
+				width: 271px;
+			  align-self: center;
+			  object-fit: cover;
+			}
+		}
+	}
+
+	.package-content {
+		padding: 1em;
+		align-self: center;
+
+		p {
+			padding: 10px 0;
+		}
+	}
 }

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Allure Salon & Spa - Spa Packages</title>
     <link rel="stylesheet" href="assets/dist/css/main.css" />
+    <script src="https://use.typekit.net/oxi0lak.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </head>
   <body>
     <!-- ICOMOON HTML -->
@@ -27,13 +29,8 @@
       </defs>
     </svg>
 
-    <!-- BACKGROUND IMAGE -->
-    <img class="background" src="assets/dist/img/salon-decor.jpeg" alt="spa" title="spa">
-
-    <h1>SPA <span class="special-heading">Packages</span></h1>
-
     <!-- NAVIGATION -->
-    <nav>
+    <nav class="pages-nav centered red">
       <a href="#"><img src="assets/dist/img/allure-alt-logo-red.png" alt="Allure Salon & Spa" title="Allure Salon & Spa"></a>
       <ul>
         <li><a href="#">Salon Services</a></li>
@@ -41,87 +38,109 @@
         <li><a href="#" id="current-page">Spa Packages</a></li>
         <li><a href="#">Our Blog</a></li>
       </ul>
+
+      <!-- SOCIAL MEDIA LINKS -->
+      <div class="sub-page-social-media">
+        <a href="#"><svg class="icon icon-facebook red"><use xlink:href="#icon-facebook"></use></svg></a>
+        <a href="#"><svg class="icon icon-instagram red"><use xlink:href="#icon-instagram"></use></svg></a>
+        <a href="#"><svg class="icon icon-twitter red"><use xlink:href="#icon-twitter"></use></svg></a>
+      </div>
     </nav>
 
-    <!-- SOCIAL MEDIA LINKS -->
-    <div class="sub-page-social-media">
-      <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
-      <svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg>
-      <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+    <div class="spa-packages-heading">
+      <h1 id="spa-packages-heading"><span class="spa-packages-heading_spa">SPA</span> <span class="special-heading red">Packages</span></h1>
     </div>
 
-    <main>
+    <main id="spa-packages-main">
 
-      <img src="assets/dist/img/flower-overlay.png" alt="flowers" title="flowers">
+      <div class="margin-auto">
+        <div class="card-package-wrapper">
 
-      <!-- BRIDAL PACKAGE -->
-      <div class="package-wrapper">
-        <div class="package">
-          <div class="package-image">
-            <img src="assets/dist/img/wedding-hair.jpg" alt="wedding hair" title="wedding hair">
+          <!-- BRIDAL PACKAGE -->
+          <div class="package-wrapper maroon">
+            <div class="package">
+              <div class="package-image">
+                <img src="assets/dist/img/wedding-hair.jpg" alt="wedding hair" title="wedding hair">
+              </div>
+              <div class="package-content">
+                <h2>BRIDAL PACKAGE</h2>
+                <div class="pink-divider"></div>
+                <p class="cenetered">Toning, Full Face Wax/Thread, Facial, Makeup, Up-do,
+                  Dupatta/Veil & Jewelry Setting.</p>
+                <p class="centered">$250</p>
+
+                <!-- BOOK NOW BUTTON -->
+                <div class="pink-book-now-wrapper">
+                  <button type="button" class="pink-book-now">BOOK NOW</button>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="package-content">
-            <h2>BRIDAL PACKAGE</h2>
-            <p class="cenetered">Toning, Full Face Wax/Thread, Facial, Makeup, Up-do,
-              Dupatta/Veil & Jewelry Setting.</p>
-            <p class="centered">$250</p>
+
+          <!-- MEGA BRIDAL PACKAGE -->
+          <div class="package-wrapper red">
+            <div class="package">
+              <div class="package-image">
+                <img src="assets/dist/img/mega-bridal.jpg" alt="wedding hair" title="wedding hair">
+              </div>
+              <div class="package-content">
+                <h2>MEGA BRIDAL PACKAGE</h2>
+                <div class="pink-divider"></div>
+                <p class="cenetered">Full Body Wax, Gold Facial, Full Face Wax/Thread,
+                  Toning, Bridal Henna, Makeup, Up-do, Dupatta/Veil,
+                  and Jewelry Setting.</p>
+                <p class="centered">$450</p>
+
+                <!-- BOOK NOW BUTTON -->
+                <div class="pink-book-now-wrapper">
+                  <button type="button" class="pink-book-now">BOOK NOW</button>
+                </div>
+              </div>
+            </div>
           </div>
-          <!-- BOOK NOW BUTTON -->
-          <button type="button" class="red-book-now">BOOK NOW</button>
+
+          <!--BRIDESMAID OR PROM PACKAGES -->
+          <div class="package-wrapper maroon">
+            <div class="package">
+              <div class="package-image">
+                <img src="assets/dist/img/prom.jpeg" alt="prom hair" title="prom hair">
+              </div>
+              <div class="package-content">
+                <h2>BRIDESMAID OR PROM PACKAGES</h2>
+                <div class="pink-divider"></div>
+                <p class="cenetered">Please contact us at (630) 499-8260</p>
+
+                <!-- BOOK NOW BUTTON -->
+                <div class="pink-book-now-wrapper">
+                  <button type="button" class="pink-book-now">BOOK NOW</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
 
-      <!-- MEGA BRIDAL PACKAGE -->
-      <div class="package-wrapper">
-        <div class="package">
-          <div class="package-image">
-            <img src="assets/dist/img/mega-bridal.jpg" alt="wedding hair" title="wedding hair">
-          </div>
-          <div class="package-content">
-            <h2>MEGA BRIDAL PACKAGE</h2>
-            <p class="cenetered">Full Body Wax, Gold Facial, Full Face Wax/Thread,
-              Toning, Bridal Henna, Makeup, Up-do, Dupatta/Veil,
-              and Jewelry Setting.</p>
-            <p class="centered">$450</p>
-          </div>
-          <!-- BOOK NOW BUTTON -->
-          <button type="button" class="red-book-now">BOOK NOW</button>
-        </div>
-      </div>
 
-      <!--BRIDESMAID OR PROM PACKAGES -->
-      <div class="package-wrapper">
-        <div class="package">
-          <div class="package-image">
-            <img src="assets/dist/img/prom.jpeg" alt="prom hair" title="prom hair">
-          </div>
-          <div class="package-content">
-            <h2>BRIDESMAID OR PROM PACKAGES</h2>
-            <p class="cenetered">Please contact us at (630) 499-8260</p>
-          </div>
-          <!-- BOOK NOW BUTTON -->
-          <button type="button" class="red-book-now">BOOK NOW</button>
-        </div>
+        <article class="centered">
+          <p>We also provide certain in-home services, such as Henna, Makeup, and Formal Style for the bride or groups of more than 5.</p>
+          <h3>Check out OUR <span class="special"><a href="#" alt="link to blog">Blog</a></span></h3>
+          <p>to see examples of our previous up-do styles and makeup.</p>
+        </article>
       </div>
-
-      <p class="centered">We also provide certain in-home services, such as Henna, Makeup, and Formal Style for the bride or groups of more than 5.</p>
-      <h3>Check out OUR <span class="special"><a href="#" alt="link to blog">Blog</a></span></h3>
-      <p>to see examples of our previous up-do styles and makeup.</p>
     </main>
 
-    <footer class=" sub-page-footer red-footer">
+    <footer class="sub-page-footer red-footer">
 
       <!-- LOCATION & HOURS -->
-      <div class="grid">
+      <div class="padding centered">
         <p>646 S Frontenac St unit 101,
           Aurora, IL 60504</p>
         <p>PHONE: (630) 499-8260</p>
       </div>
 
-      <div class="grid">
-        <p>TUES - SAT</p><p>10AM to 7PM</p>
-        <p>SUNDAY</p><p>12PM to 5PM</p>
-        <p>MONDAY</p><p>CLOSED</p>
+      <div class="grid centered">
+        <p>TUES - SAT</p><p class="bold">10AM to 7PM</p>
+        <p>SUNDAY</p><p class="bold">12PM to 5PM</p>
+        <p>MONDAY</p><p class="bold">CLOSED</p>
       </div>
 
       <p class="copywrite">ALLURE SALON & SPA &#169; 2017 | DESIGNED BY CAITLIN JOHNSON DESIGNS</p>
@@ -129,6 +148,9 @@
     </footer>
 
 
-    <script src="assets/dist/js/app.js" charset="utf-8"></script>
+    <script src="assets/dist/js/production.js" charset="utf-8"></script>
+    <script>
+      $.backstretch("assets/dist/img/salon-decor.jpeg");
+    </script>
   </body>
 </html>

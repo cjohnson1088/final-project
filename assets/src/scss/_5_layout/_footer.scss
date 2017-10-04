@@ -38,12 +38,33 @@ footer {
 
 // SUB PAGES FOOTER
 .sub-page-footer {
+
+	@include breakpoint(small) {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
 	.grid {
 			display: block;
+			padding: 1em;
+
+			@include breakpoint(small) {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+			}
 	}
 }
 
 .maroon-footer {
 	color: $pink;
 	background-color: $maroon;
+}
+
+.red-footer {
+	color: $beige;
+	background-color: $red;
+
+	.copywrite {
+		color: $pink;
+	}
 }
