@@ -26,6 +26,7 @@ h4 {
 
 .homepage-heading-wrapper {
 	position: absolute;
+	padding: 1em;
 	top: 40%;
 	left: 25%;
 
@@ -49,6 +50,13 @@ h4 {
 .homepage-heading_hello {
 	z-index: 10;
 	position: relative;
+}
+
+.homepage-heading_our {
+	z-index: 10;
+	position: relative;
+	right: 85px;
+  top: -5px;
 }
 
 .special-heading {
@@ -106,6 +114,8 @@ h3 {
 
 	.social-media {
 		text-align: center;
+		position: relative;
+		z-index: 100;
 
 		@include breakpoint(portrait) {
 			float: right;
@@ -137,6 +147,8 @@ h3 {
 
 	a {
 		.icon {
+			position: relative;
+			z-index: 100;
 			fill: $maroon;
 			max-width: 45px;
 			max-height: 45px;
@@ -153,6 +165,10 @@ h3 {
 
 		.pink {
 			fill: $pink;
+		}
+
+		.beige {
+			fill: $beige;
 		}
 	}
 }
@@ -299,6 +315,77 @@ article {
 			img {
 				object-fit: cover;
 				overflow: hidden;
+			}
+		}
+	}
+}
+
+// BLOG
+#blog-main {
+	margin-top: 15%;
+}
+
+.blog-entry-wrapper {
+	background-color: $beige-overlay;
+	padding: 2em;
+	text-align: center;
+	margin-top: 25%;
+
+	.img-wrapper {
+
+		img {
+		width: 75%;
+		padding: 1em;
+		}
+	}
+
+	p {
+		padding: 10px;
+	}
+
+	.entry-data {
+		color: $red;
+		font-size: .75em;
+		font-style: italic;
+
+		a {
+			color: $red;
+			font-style: normal;
+		}
+	}
+}
+
+// ASIDE
+aside {
+	background-color: $beige;
+  margin: 1em;
+	border: 1px solid #ddd;
+
+	.archive-wrapper {
+		padding: 0 1em 1em 1em;
+
+		.archive-content {
+			padding-top: 1em;
+
+			h3 {
+				text-align: center;
+				color: $red;
+			}
+
+			ul {
+
+				li {
+					list-style: none;
+					border-bottom: rgba(166, 94, 88, 0.68) .25px solid;
+					padding: 10px 0;
+
+					a {
+						text-decoration: none;
+						color: $red;
+						font-family: $san-serif;
+						padding: 10px 0;
+					}
+				}
 			}
 		}
 	}

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Allure Salon & Spa - Our Blog</title>
     <link rel="stylesheet" href="assets/dist/css/main.css" />
+    <script src="https://use.typekit.net/oxi0lak.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </head>
   <body>
     <!-- ICOMOON HTML -->
@@ -33,8 +35,19 @@
     <!-- BACKGROUND IMAGE -->
     <!--<img class="background" src="assets/dist/img/blog-bg.jpg" alt="white paint" title="white paint">-->
 
-    <!-- NAVIGATION -->
-    <nav>
+    <!-- MOBILE NAVIGATION -->
+    <nav class="mobile-home-nav">
+      <ul>
+        <li><a href="#"><img src="assets/dist/img/allure-main-logo.png" alt="Allure Salon & Spa" title="Allure Salon & Spa"></a></li>
+        <li><a href="#">Salon Services</a></li>
+        <li><a href="#">Spa Services</a></li>
+        <li><a href="#">Spa Packages</a></li>
+        <li><a href="#" class="current-page">Our Blog</a></li>
+      </ul>
+    </nav>
+
+    <!-- DESKTOP NAVIGATION -->
+    <nav class="home-nav">
       <ul>
         <li><a href="#">Salon Services</a></li>
         <li><a href="#">Spa Services</a></li>
@@ -43,24 +56,29 @@
         <li><a href="#" class="current-page">Our Blog</a></li>
       </ul>
     </nav>
-    <h1>OUR <span class="special-heading">Blog</span></h1>
+
+    <div class="homepage-heading-wrapper">
+      <h1 id="homepage-heading"><span class="homepage-heading_our">OUR</span> <span class="special-heading">Blog</span></h1>
+    </div>
 
     <!-- SOCIAL MEDIA LINKS -->
     <div class="social-media-wrapper">
-      <div class="sub-page-social-media">
-        <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
-        <svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg>
-        <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+      <div class="social-media">
+        <a href="#"><svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg></a>
+        <a href="#"><svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg></a>
+        <a href="#"><svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg></a>
       </div>
     </div>
 
-    <main>
+    <main id="blog-main">
       <div class="blog-entry-wrapper">
         <h2>WE MAKE YOUR BIG DAY EFFORTLESSLY GORGEOUS!</h2>
         <div class="pink-divider"></div>
         <p>Cupcake powder chocolate bar. Cupcake icing gummi bears tart wafer biscuit bonbon. Tiramisu brownie biscuit wafer jelly marzipan.</p>
         <p>Fruitcake sugar plum danish ice cream chupa chups gummies. Caramels toffee jelly-o soufflé wafer dessert cookie icing. Icing ice cream sweet roll wafer oat cake jelly donut. Fruitcake dessert gummi bears pudding.</p>
-        <img src="assets/dist/img/heart-hands.jpg" alt="heart hands" title="heart hands">
+        <div class="centered img-wrapper">
+          <img src="assets/dist/img/heart-hands.jpg" alt="heart hands" title="heart hands">
+        </div>
         <p>Gummi bears carrot cake dragée candy jelly-o marshmallow marshmallow tart. Dessert oat cake pudding cupcake halvah sweet roll pudding cupcake bear claw.</p>
         <p>-Allure Team</p>
         <div class="entry-data">
@@ -75,7 +93,7 @@
         <button type="submit" class="searchButton">
           <svg class="icon icon-search"><use xlink:href="#icon-search"></use></svg>
         </button>
-        <input type="text" class="searchTerm" placeholder="Search">
+        <input type="text" class="searchTerm" placeholder="Search...">
       </div>
     </div>
 
@@ -108,16 +126,16 @@
     <footer class=" sub-page-footer maroon-footer">
 
       <!-- LOCATION & HOURS -->
-      <div class="grid">
+      <div class="padding centered">
         <p>646 S Frontenac St unit 101,
           Aurora, IL 60504</p>
-        <p>PHONE: (630) 499-8260</p>
+        <p class="phone">PHONE: (630) 499-8260</p>
       </div>
 
-      <div class="grid">
-        <p>TUES - SAT</p><p>10AM to 7PM</p>
-        <p>SUNDAY</p><p>12PM to 5PM</p>
-        <p>MONDAY</p><p>CLOSED</p>
+      <div class="centered grid">
+        <p>TUES - SAT</p><p class="bold">10AM to 7PM</p>
+        <p>SUNDAY</p><p class="bold">12PM to 5PM</p>
+        <p>MONDAY</p><p class="bold">CLOSED</p>
       </div>
 
       <p class="copywrite">ALLURE SALON & SPA &#169; 2017 | DESIGNED BY CAITLIN JOHNSON DESIGNS</p>
