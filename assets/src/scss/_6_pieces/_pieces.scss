@@ -326,6 +326,7 @@ article {
 }
 
 .blog-entry-wrapper {
+	color: $maroon;
 	background-color: $beige-overlay;
 	padding: 2em;
 	text-align: center;
@@ -340,6 +341,7 @@ article {
 	}
 
 	p {
+		text-align: left;
 		padding: 10px;
 	}
 

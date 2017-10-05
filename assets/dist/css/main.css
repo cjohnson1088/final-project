@@ -817,6 +817,7 @@ article {
   margin-top: 15%; }
 
 .blog-entry-wrapper {
+  color: #591616;
   background-color: rgba(242, 219, 206, 0.5);
   padding: 2em;
   text-align: center;
@@ -825,6 +826,7 @@ article {
     width: 75%;
     padding: 1em; }
   .blog-entry-wrapper p {
+    text-align: left;
     padding: 10px; }
   .blog-entry-wrapper .entry-data {
     color: #8c2a2a;
