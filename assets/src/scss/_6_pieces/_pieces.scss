@@ -105,6 +105,14 @@ h3 {
 	}
 }
 
+#home-main {
+	background-image: url("../img/flower-overlay.png");
+	background-color: $beige;
+	background-blend-mode: soft-light;
+	padding: 1em;
+	color: $maroon;
+}
+
 // HOME SOCIAL MEDIA
 .social-media-wrapper {
 	background-color: $maroon;
