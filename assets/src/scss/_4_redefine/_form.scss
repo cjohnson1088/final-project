@@ -88,6 +88,16 @@ input[type="email"] {
 // SEARCH BAR
 .search-bar {
 	padding: 1em;
+
+	@include breakpoint(portrait) {
+		width: 50%;
+		padding-top: 10%;
+		margin: auto;
+	}
+
+	@include breakpoint(landscape) {
+		width: 75%;
+	}
 }
 
 .search {

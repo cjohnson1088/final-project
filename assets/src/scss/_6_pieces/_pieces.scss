@@ -39,7 +39,7 @@ h4 {
 	}
 
 	@include breakpoint(portrait) {
-		top: 35%;
+		top: 25%;
 	}
 
 	#homepage-heading {
@@ -111,6 +111,12 @@ h3 {
 	padding: 10px 20px;
 	align-self: center;
 	justify-self: end;
+
+	&.left {
+		@include breakpoint(portrait) {
+			position: absolute;
+		}
+	}
 
 	.social-media {
 		text-align: center;
@@ -332,6 +338,17 @@ article {
 	text-align: center;
 	margin-top: 25%;
 
+	@include breakpoint(portrait) {
+		width: 75%;
+    position: relative;
+    left: 120px;
+    top: 50px;
+	}
+
+	@include breakpoint(landscape) {
+		width: 50%;
+	}
+
 	.img-wrapper {
 
 		img {
@@ -358,10 +375,27 @@ article {
 }
 
 // ASIDE
+.sidebar {
+	@include breakpoint(landscape) {
+		width: 32%;
+    position: absolute;
+    right: 0;
+    top: 275px;
+	}
+}
 aside {
 	background-color: $beige;
   margin: 1em;
 	border: 1px solid #ddd;
+
+	@include breakpoint(portrait) {
+		width: 50%;
+    margin: auto;
+	}
+
+	@include breakpoint(landscape) {
+		width: 75%;
+	}
 
 	.archive-wrapper {
 		padding: 0 1em 1em 1em;

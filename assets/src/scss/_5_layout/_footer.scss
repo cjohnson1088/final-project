@@ -58,6 +58,10 @@ footer {
 .maroon-footer {
 	color: $pink;
 	background-color: $maroon;
+
+	@include breakpoint(portrait) {
+		margin-top: 1em;
+	}
 }
 
 .red-footer {

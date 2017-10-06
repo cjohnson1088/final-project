@@ -290,6 +290,14 @@ input[type="email"] {
 
 .search-bar {
   padding: 1em; }
+  @media (min-width: 768px) {
+    .search-bar {
+      width: 50%;
+      padding-top: 10%;
+      margin: auto; } }
+  @media (min-width: 1024px) {
+    .search-bar {
+      width: 75%; } }
 
 .search {
   display: -webkit-box;
@@ -447,7 +455,8 @@ input[type="email"] {
         color: #591616;
         text-decoration: none; }
         .home-nav ul li a.current-page {
-          color: #f2dbce; }
+          color: #f2dbce;
+          text-shadow: 0 3px 4px rgba(31, 31, 31, 0.75); }
         .home-nav ul li a img {
           width: 100%;
           max-width: 250px; }
@@ -536,6 +545,9 @@ footer {
 .maroon-footer {
   color: #a65e58;
   background-color: #591616; }
+  @media (min-width: 768px) {
+    .maroon-footer {
+      margin-top: 1em; } }
 
 .red-footer {
   color: #f2dbce;
@@ -589,7 +601,7 @@ h4 {
       top: 60%; } }
   @media (min-width: 768px) {
     .homepage-heading-wrapper {
-      top: 35%; } }
+      top: 25%; } }
   .homepage-heading-wrapper #homepage-heading {
     color: #260507; }
 
@@ -646,6 +658,9 @@ h3 {
   -ms-flex-item-align: center;
   align-self: center;
   justify-self: end; }
+  @media (min-width: 768px) {
+    .social-media-wrapper.left {
+      position: absolute; } }
   .social-media-wrapper .social-media {
     text-align: center;
     position: relative;
@@ -822,6 +837,15 @@ article {
   padding: 2em;
   text-align: center;
   margin-top: 25%; }
+  @media (min-width: 768px) {
+    .blog-entry-wrapper {
+      width: 75%;
+      position: relative;
+      left: 120px;
+      top: 50px; } }
+  @media (min-width: 1024px) {
+    .blog-entry-wrapper {
+      width: 50%; } }
   .blog-entry-wrapper .img-wrapper img {
     width: 75%;
     padding: 1em; }
@@ -836,10 +860,24 @@ article {
       color: #8c2a2a;
       font-style: normal; }
 
+@media (min-width: 1024px) {
+  .sidebar {
+    width: 32%;
+    position: absolute;
+    right: 0;
+    top: 275px; } }
+
 aside {
   background-color: #f2dbce;
   margin: 1em;
   border: 1px solid #ddd; }
+  @media (min-width: 768px) {
+    aside {
+      width: 50%;
+      margin: auto; } }
+  @media (min-width: 1024px) {
+    aside {
+      width: 75%; } }
   aside .archive-wrapper {
     padding: 0 1em 1em 1em; }
     aside .archive-wrapper .archive-content {
