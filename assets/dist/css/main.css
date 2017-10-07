@@ -575,7 +575,7 @@ footer {
   background-color: #591616; }
   @media (min-width: 768px) {
     .maroon-footer {
-      margin-top: 1em; } }
+      margin-top: 5em; } }
 
 .red-footer {
   color: #f2dbce;
